@@ -1,17 +1,17 @@
 'use strict'
 
+const box = document.querySelector("#get_size");
 
-window.onresize = get;
+window.addEventListener('resize', () => { get() });
 
 function get() {
-  let screenW = window.screen.width;
-  document.querySelector('.screen').textContent = `window.screen: ${screenW}, ${window.screen.height}`;
-
-  document.querySelector('.outer').textContent = `window.outer: ${window.outerWidth}, ${window.outerHeight}`;
-
-  document.querySelector('.inner').textContent = `window.inner: ${window.innerWidth}, ${window.innerHeight}`;
-
-  document.querySelector('.client').textContent = `body.client: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`;
+  box.innerHTML =
+    `
+  window.screen: ${window.screen.width}, ${window.screen.height} <br/>
+  window.outer: ${window.outerWidth}, ${window.outerHeight}<br/>
+  window.inner: ${window.innerWidth}, ${window.innerHeight}<br/>
+  body.client: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}
+  `
 }
 
 
