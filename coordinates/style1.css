@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.target {
+  position: absolute;
+}
+
+.horizontal {
+  width: 100%;
+  border-top: solid 3px white;
+  position: absolute;
+  top: 60px;
+}
+
+.vertical {
+  height: 100%;
+  border-left: solid 3px white;
+  position: absolute;
+  left: 60px;
+}
+
+.text {
+  display: inline-block;
+  position: absolute;
+  color: beige;
+}
