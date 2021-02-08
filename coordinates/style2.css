@@ -1,0 +1,18 @@
+.btn {
+  background-color: coral;
+  border: none;
+  color: whitesmoke;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
