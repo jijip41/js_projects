@@ -5,24 +5,30 @@ body {
 
 .target {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .horizontal {
   width: 100%;
   border-top: solid 3px white;
   position: absolute;
-  top: 60px;
+  top: 50%;
 }
 
 .vertical {
   height: 100%;
   border-left: solid 3px white;
   position: absolute;
-  left: 60px;
+  left: 50%;
 }
 
 .text {
   display: inline-block;
   position: absolute;
+  top: 50%;
+  left: 50%;
   color: beige;
+  transform: translate(10px, 10px);
 }
